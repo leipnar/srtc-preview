@@ -1,0 +1,19 @@
+/* P-012 inner page components */
+.inner-hero{background:radial-gradient(circle at 80% 20%,rgba(186,146,80,.08),transparent 42%),linear-gradient(135deg,#0B4178,#082E57);color:#fff;overflow:hidden}.inner-hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:3rem}.inner-hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.08;max-width:16ch}.inner-kicker{letter-spacing:.14em;text-transform:uppercase}.inner-art{position:relative;min-height:300px;border:1px solid rgba(255,255,255,.3);border-radius:24px;background:repeating-linear-gradient(135deg,transparent 0 30px,rgba(255,255,255,.05) 31px 32px)}.inner-art span{position:absolute;inset:15%;border:1px solid #BA9250;border-radius:50%;transform:rotate(-25deg)}.inner-art span:nth-child(2){inset:25% 8%;transform:rotate(35deg)}.inner-art span:nth-child(3){inset:35%;background:#BA9250}.inner-content{max-width:1100px}.inner-content h2{margin-top:2rem}.inner-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.inner-cards article{padding:2rem;border:1px solid #0B4178;border-radius:24px;background:#F4F7FA}.inner-cards strong{font-size:3rem}.inner-number{color:#082E57;font-size:1rem;font-weight:700}.inner-content button:disabled{opacity:1;cursor:not-allowed}@media(max-width:768px){.inner-hero-grid,.inner-cards{grid-template-columns:1fr}.inner-art{min-height:180px}}
+/* P-013: sector bento and page-specific abstract compositions. */
+@media(min-width:769px){.batch-sectors .batch-cards{grid-template-columns:repeat(6,minmax(0,1fr))}.batch-sectors .batch-cards article{grid-column:span 3}.batch-sectors .batch-cards article:nth-child(4n+1),.batch-sectors .batch-cards article:nth-child(4n+4){grid-column:span 4}.batch-sectors .batch-cards article:nth-child(4n+2),.batch-sectors .batch-cards article:nth-child(4n+3){grid-column:span 2}}
+.batch-markets .inner-art span{border-radius:20%;transform:rotate(45deg)}
+.batch-projects .inner-art span{border-radius:16px;transform:rotate(-12deg)}
+.batch-project-detail .inner-art span{border-radius:0;transform:rotate(45deg)}
+/* P-014: distinct abstract art and accessible static form layout. */
+.batch-sectors .inner-art span{border-radius:8px;transform:rotate(20deg) skew(-12deg)}
+.batch-news .inner-art span{border-radius:40% 5%;transform:rotate(-30deg)}
+.batch-news-detail .inner-art span{border-radius:4px 40%;transform:rotate(25deg)}
+.batch-contact .inner-art span{border-radius:50% 10%;transform:rotate(10deg)}
+.batch-contact form{display:grid;gap:1rem}.batch-contact form label{display:grid;gap:.4rem}.batch-contact form input,.batch-contact form textarea{width:100%;padding:.75rem;border:1px solid #0B4178;border-radius:.5rem;background:#fff;color:#082E57}.batch-contact button{padding:.75rem;border:1px solid #082E57;border-radius:.5rem;background:#fff;color:#082E57}
+/* Prevent form grid intrinsic sizing from expanding the contact cards. */
+.batch-contact .inner-cards article,.batch-contact form,.batch-contact form label,.batch-contact form input,.batch-contact form textarea{min-width:0}
+.inner-cards article { border-color: #d5e0e8; box-shadow: 0 12px 32px rgba(8,46,87,.06); }
+.inner-cards article h2 { margin-top: .5rem; line-height: 1.35; }
+.inner-content > p, .inner-content > ol { max-width: 68ch; margin-block: .75rem 1.5rem; }
+.inner-content article { scroll-margin-top: 6rem; }

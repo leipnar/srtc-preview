@@ -1,0 +1,31 @@
+/* P-011: Shared visual tokens. */
+:root {
+  --blue: #0B4178;
+  --blue-deep: #082E57;
+  --gold: #BA9250;
+  --white: #FFFFFF;
+  --gray-bg: #F4F7FA;
+  --ink: var(--blue-deep);
+  --muted: var(--blue);
+  --line: rgba(11, 65, 120, 0.18);
+  --ph: var(--gray-bg);
+  --gradient-navy: linear-gradient(135deg, var(--blue), var(--blue-deep));
+  --glow-gold: radial-gradient(circle at 85% 15%, rgba(186, 146, 80, 0.08), transparent 45%);
+  --font-display: clamp(2.5rem, 4.5vw + 1rem, 4.5rem);
+  --font-heading: clamp(2rem, 2vw + 1.4rem, 3rem);
+  --font-body: clamp(1rem, 0.2vw + 0.95rem, 1.125rem);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --section-space: clamp(6rem, 8vw, 8rem);
+  --radius-card: 1rem;
+  --radius-large: 1.5rem;
+  --radius-pill: 999px;
+  --shadow-soft: 0 8px 24px rgba(8, 46, 87, 0.07);
+  --shadow-lift: 0 16px 36px rgba(8, 46, 87, 0.14);
+  --motion-fast: 150ms;
+  --motion-base: 220ms;
+}
